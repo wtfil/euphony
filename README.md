@@ -8,15 +8,16 @@ Run node.js with all ES6 features today!
 
 ###usage
 
-`euphony` extending native `require` to allow recompile all es6 source to es5.
+`euphony` extends native `require` allowing use es6 code in `.js` files.
 
-You should include `euphony` in the be begining of your code. Better way to do this is create one more file in your project:
+You should include `euphony` in the be begining of your programm, to overide all modules. Better way to do this is create one more file:
 
 `index.js`
 
 ```js
 var {createReadStream, createWriteStream} = require('fs');
 createReadStream('./src.log').pipe(createWriteStream('./dst.log'));
+// any other es6 code here
 ```
 
 and `index.es5.js`

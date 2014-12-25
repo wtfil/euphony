@@ -1,6 +1,6 @@
 {
   "name": "euphony",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "dependencies": {
     "traceur": "0.0.79"
   }
