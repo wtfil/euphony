@@ -30,3 +30,16 @@ require('./index');
 Now you can run your code:
 
     node index.es5
+
+###options
+
+You can pass options into `euphony`
+
+```js
+require('euphony')({
+    // will skip all files with "lib" or "node_modules" in pathname
+    skip: /lib|node_modules/ 
+})
+```
+
+by default `euphony` skips all `node_modules`
